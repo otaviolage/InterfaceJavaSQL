@@ -53,3 +53,28 @@
 <br/>
 <br/>
 <br/>
+
+### Banco de Dados no MySQL, criado com os códigos abaixo:
+
+```sql
+
+create table cadastroclientes (
+	id			int					auto_increment primary key,
+    nome		varchar(30)			not null,
+    cpf			varchar(30),
+    sexo		varchar(15),
+    endereco	varchar(120),
+    cidade		varchar(60),
+    estado		varchar(30) 
+);
+
+create table cadastroprodutos (
+	id 			int 				auto_increment primary key,
+    categoria 	varchar(30),
+    nome		varchar(60),
+    estoque		int					default 0,
+    custo		decimal(8,2),
+    preco		decimal(8,2)
+);
+
+```
